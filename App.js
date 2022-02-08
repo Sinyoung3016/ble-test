@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {View, Text} from 'react-native';
 import {BleManager} from 'react-native-ble-plx';
+import {Base64} from './base64';
 
 export default function App() {
   const [services, setServices] = useState([]);
@@ -64,7 +65,7 @@ export default function App() {
           <Text style={{fontSize: 20}}>{i + 1}번째</Text>
           <Text style={{fontSize: 20}}>services : {services[i]}</Text>
           <Text style={{fontSize: 20}}>char : {char[i]}</Text>
-          <Text style={{fontSize: 20}}>vals : {vals[i]}</Text>
+          <Text style={{fontSize: 20}}>vals : {Base64.decode(vals[i])}</Text>
         </View>,
       );
     }
