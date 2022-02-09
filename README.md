@@ -31,6 +31,12 @@ On Android, Add a permmision to AndroidManifest.xml
 <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION"/>
 ```
 
+## Test
+
+#### App
+
+![](https://user-images.githubusercontent.com/53924962/153273218-e1cafd7b-8e5d-446a-a2a2-90f06a7d798e.jpg)
+
 
 
 
